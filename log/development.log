@@ -244,3 +244,1042 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 3657)
 
 
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-01 11:34:40 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 555)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1808)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4145)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 5490)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-02-01 11:34:43 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 374)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-01 11:34:44 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.2ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 77)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1653)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 3759)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 4804)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-01 11:34:47 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 121)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3074)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 3665)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2022-02-01 11:34:48 +0300
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 125)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1050)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3157)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4262)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-01 11:34:51 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 121)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3071)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3664)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-01 11:46:27 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 822)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.4ms | Allocations: 5995)
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 41131)
+Completed 200 OK in 133ms (Views: 102.9ms | ActiveRecord: 5.1ms | Allocations: 52601)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-01 11:46:47 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 244)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 206)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1951)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4056)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 5203)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-01 11:47:19 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 509)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2141)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4551)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-02-01 11:47:45 +0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"pwambui93@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "pwambui93@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (12.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "pwambui93@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-02-01 08:47:45.590897"], ["updated_at", "2022-02-01 08:47:45.590897"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 14.5ms | Allocations: 12229)
+
+
+  
+NoMethodError (undefined method `user_url' for #<Devise::RegistrationsController:0x0000000000c7b0>):
+  
+actionpack (7.0.1) lib/action_dispatch/routing/polymorphic_routes.rb:231:in `public_send'
+actionpack (7.0.1) lib/action_dispatch/routing/polymorphic_routes.rb:231:in `polymorphic_method'
+actionpack (7.0.1) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (7.0.1) lib/action_dispatch/routing/url_for.rb:187:in `full_url_for'
+actionpack (7.0.1) lib/action_dispatch/routing/url_for.rb:170:in `url_for'
+actionpack (7.0.1) lib/action_controller/metal/redirecting.rb:144:in `_compute_redirect_to_location'
+actionpack (7.0.1) lib/action_controller/metal/redirecting.rb:89:in `redirect_to'
+actionpack (7.0.1) lib/action_controller/metal/flash.rb:62:in `redirect_to'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:42:in `block in redirect_to'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:41:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.8.1) app/controllers/devise/registrations_controller.rb:25:in `create'
+actionpack (7.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:214:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.1) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.1) lib/puma/configuration.rb:252:in `call'
+puma (5.6.1) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.1) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.1) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.1) lib/puma/server.rb:441:in `process_client'
+puma (5.6.1) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-02-01 11:50:48 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 13953)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 14762)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 11:56:56 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 6182)
+Completed 500 Internal Server Error in 22ms (Allocations: 7095)
+
+
+  
+ActionView::Template::Error (Missing partial navigation/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/macuser/Desktop/applications/Message-Me/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-7.0.1/app/views"
+
+Did you mean?  layouts/action_text/contents/content
+               action_text/contents/content
+               action_text/attachables/missing_attachable
+               action_text/attachment_galleries/attachment_gallery
+               active_storage/blobs/blob
+               devise/shared/links):
+    16:   </head>
+    17: 
+    18:   <body>
+    19:   <%= render "navigation/navigation" %>
+    20:      <p class="notice"><%= notice %></p>
+    21:       <p class="alert"><%= alert %></p>
+    22:       <main class="container-fluid">
+  
+app/views/layouts/application.html.erb:19
+Started GET "/" for 127.0.0.1 at 2022-02-01 11:57:42 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 6173)
+Completed 500 Internal Server Error in 23ms (Allocations: 7081)
+
+
+  
+ActionView::Template::Error (Missing partial ./navigation/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/macuser/Desktop/applications/Message-Me/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-7.0.1/app/views"
+
+Did you mean?  layouts/action_text/contents/content
+               action_text/attachables/missing_attachable
+               action_text/contents/content
+               action_text/attachment_galleries/attachment_gallery
+               active_storage/blobs/blob
+               action_text/attachables/remote_image):
+    16:   </head>
+    17: 
+    18:   <body>
+    19:   <%= render "./navigation/navigation" %>
+    20:      <p class="notice"><%= notice %></p>
+    21:       <p class="alert"><%= alert %></p>
+    22:       <main class="container-fluid">
+  
+app/views/layouts/application.html.erb:19
+Started GET "/" for 127.0.0.1 at 2022-02-01 11:58:19 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 6234)
+Completed 500 Internal Server Error in 24ms (Allocations: 7142)
+
+
+  
+ActionView::Template::Error (Missing partial ./navigation/_navigation with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/macuser/Desktop/applications/Message-Me/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-7.0.1/app/views"
+
+Did you mean?  navigation/navigation
+               layouts/action_text/contents/content
+               action_text/attachables/missing_attachable
+               action_text/contents/content
+               action_text/attachment_galleries/attachment_gallery
+               active_storage/blobs/blob):
+    16:   </head>
+    17: 
+    18:   <body>
+    19:   <%= render "./navigation/navigation" %>
+    20:      <p class="notice"><%= notice %></p>
+    21:       <p class="alert"><%= alert %></p>
+    22:       <main class="container-fluid">
+  
+app/views/layouts/application.html.erb:19
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:01:23 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 6163)
+Completed 500 Internal Server Error in 25ms (Allocations: 7071)
+
+
+  
+ActionView::Template::Error (Missing partial navigation/_nav.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/macuser/Desktop/applications/Message-Me/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-7.0.1/app/views"
+
+Did you mean?  navigation/nav
+               layouts/action_text/contents/content
+               action_text/attachment_galleries/attachment_gallery
+               action_text/contents/content
+               active_storage/blobs/blob
+               devise/shared/links):
+    16:   </head>
+    17: 
+    18:   <body>
+    19:   <%= render "navigation/nav.html.erb" %>
+    20:      <p class="notice"><%= notice %></p>
+    21:       <p class="alert"><%= alert %></p>
+    22:       <main class="container-fluid">
+  
+app/views/layouts/application.html.erb:19
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:01:53 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.5ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2964)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 3897)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:04:10 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.8ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3004)
+Completed 200 OK in 12ms (Views: 10.4ms | Allocations: 3937)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:06:14 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 3006)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 3939)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:06:38 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.5ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3000)
+Completed 200 OK in 14ms (Views: 11.2ms | Allocations: 3933)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:07:09 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2998)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 3931)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:07:23 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3001)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 3934)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:07:46 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3002)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 3935)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:08:35 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2994)
+Completed 200 OK in 14ms (Views: 11.0ms | Allocations: 3927)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:09:18 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3014)
+Completed 200 OK in 12ms (Views: 10.6ms | Allocations: 3947)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:09:55 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 125)
+  Rendered navigation/_nav.html.erb (Duration: 0.7ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3031)
+Completed 200 OK in 14ms (Views: 13.2ms | Allocations: 3965)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:10:05 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3006)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 3939)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:10:09 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2353)
+Completed 200 OK in 7ms (Views: 5.8ms | Allocations: 2607)
+
+
+Started GET "/" for 127.0.0.1 at 2022-02-01 12:10:32 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.7ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3018)
+Completed 200 OK in 13ms (Views: 11.3ms | Allocations: 3951)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-02-01 12:11:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-02-01 12:11:29 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 567)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1827)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4006)
+Completed 200 OK in 102ms (Views: 15.2ms | ActiveRecord: 27.6ms | Allocations: 9488)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-01 12:33:49 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 86)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1664)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 3835)
+Completed 200 OK in 61ms (Views: 28.8ms | Allocations: 5107)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-01 13:30:47 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 509)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2141)
+  Rendered navigation/_nav.html.erb (Duration: 0.8ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 4866)
+Completed 200 OK in 37ms (Views: 36.0ms | Allocations: 6162)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-02-01 13:31:03 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 509)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2141)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4866)
+Completed 200 OK in 18ms (Views: 15.9ms | Allocations: 6138)
+
+
+Started GET "/" for ::1 at 2022-02-03 09:39:54 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (24.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 314)
+  Rendered navigation/_nav.html.erb (Duration: 0.9ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 112.5ms | Allocations: 35032)
+Completed 200 OK in 151ms (Views: 117.5ms | ActiveRecord: 0.0ms | Allocations: 39837)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:39:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:40:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:41:51 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 123)
+  Rendered navigation/_nav.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3097)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4035)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:41:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:42:08 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 123)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3092)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 4029)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:42:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:42:20 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 122)
+  Rendered navigation/_nav.html.erb (Duration: 0.8ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3076)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 4009)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:42:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:42:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:44:47 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 275)
+  Rendered navigation/_nav.html.erb (Duration: 0.7ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 6293)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 7227)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:44:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:45:01 +0300
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2425)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 2690)
+
+
+Started GET "/" for ::1 at 2022-02-03 09:45:57 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2404)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2657)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:46:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:46:40 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2453)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2706)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:46:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:48:22 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 341)
+  Rendered navigation/_nav.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 3318)
+Completed 200 OK in 13ms (Views: 11.4ms | Allocations: 4253)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:48:27 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:48:59 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4606)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 4862)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:49:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:49:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:49:44 +0300
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 15)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2409)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 2671)
+
+
+Started GET "/" for ::1 at 2022-02-03 09:50:09 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 342)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3321)
+Completed 200 OK in 13ms (Views: 11.5ms | Allocations: 4256)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:50:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:50:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 09:52:32 +0300
+Processing by ChatroomController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4649)
+Completed 200 OK in 13ms (Views: 12.6ms | Allocations: 4913)
+
+
+Started GET "/" for ::1 at 2022-02-03 09:55:07 +0300
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 337)
+  Rendered navigation/_nav.html.erb (Duration: 0.9ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4904)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 5840)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:55:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 09:55:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7561261335513900210)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMessages (20220203070139)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (261.2ms)[0m  [1m[35mCREATE TABLE "messages" ("id" bigserial primary key, "message" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220203070139"]]
+  [1m[36mTRANSACTION (21.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (46.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7561261335513900210)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7561261335513900210)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserIdToMessage (20220203070623)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (41.9ms)[0m  [1m[35mALTER TABLE "messages" ADD "user_id" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220203070623"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7561261335513900210)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7561261335513900210)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUsernameToUsers (20220203070956)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "username" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220203070956"]]
+  [1m[36mTRANSACTION (40.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7561261335513900210)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2022-02-03 10:20:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 528)
+  Rendered navigation/_nav.html.erb (Duration: 0.8ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 124.5ms | Allocations: 39408)
+Completed 200 OK in 193ms (Views: 128.7ms | ActiveRecord: 0.0ms | Allocations: 47204)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:20:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-02-03 10:20:38 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 20.8ms | Allocations: 244)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 183.5ms | Allocations: 8615)
+  Rendered layout layouts/application.html.erb (Duration: 183.8ms | Allocations: 8690)
+Completed 500 Internal Server Error in 235ms (ActiveRecord: 4.5ms | Allocations: 16165)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<ActionView::Base:0x0000000000c580>
+Did you mean?  for
+               fork):
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5:   <div class="field">
+    6:     <%= f.label :username %><br />
+    7:    <%= form.text_field :username %>
+    8:   </div>
+    9: 
+   10:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:7
+app/views/devise/registrations/new.html.erb:3
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:20:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-02-03 10:20:58 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 21.8ms | Allocations: 653)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 84.0ms | Allocations: 5013)
+  Rendered navigation/_nav.html.erb (Duration: 0.7ms | Allocations: 179)
+  Rendered layout layouts/application.html.erb (Duration: 91.0ms | Allocations: 7772)
+Completed 200 OK in 99ms (Views: 96.2ms | ActiveRecord: 0.0ms | Allocations: 9157)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:21:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/users" for ::1 at 2022-02-03 10:21:30 +0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"peter", "email"=>"pwambui93@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (19.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "pwambui93@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 554)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 76)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2281)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4443)
+Completed 200 OK in 414ms (Views: 10.7ms | ActiveRecord: 26.3ms | Allocations: 11792)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:21:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/users" for ::1 at 2022-02-03 10:21:34 +0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"peter", "email"=>"pwambui93@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "pwambui93@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 470)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 75)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2185)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4353)
+Completed 200 OK in 377ms (Views: 14.4ms | ActiveRecord: 0.8ms | Allocations: 8816)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:22:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (23.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (42.1ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "username" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2022-02-03 07:22:54.490003"], ["username", "peterrobert"], ["id", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/users/sign_up" for ::1 at 2022-02-03 10:23:10 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1172)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3324)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3942)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:23:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/users" for ::1 at 2022-02-03 10:23:31 +0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"rachel", "email"=>"rach@info.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rach@info.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "rach@info.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-02-03 07:23:31.374375"], ["updated_at", "2022-02-03 07:23:31.374375"], ["username", "rachel"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to 
+Completed 500 Internal Server Error in 384ms (ActiveRecord: 8.3ms | Allocations: 8365)
+
+
+  
+NoMethodError (undefined method `user_url' for #<Devise::RegistrationsController:0x0000000000dca0>):
+  
+actionpack (7.0.1) lib/action_dispatch/routing/polymorphic_routes.rb:231:in `public_send'
+actionpack (7.0.1) lib/action_dispatch/routing/polymorphic_routes.rb:231:in `polymorphic_method'
+actionpack (7.0.1) lib/action_dispatch/routing/polymorphic_routes.rb:116:in `polymorphic_url'
+actionpack (7.0.1) lib/action_dispatch/routing/url_for.rb:187:in `full_url_for'
+actionpack (7.0.1) lib/action_dispatch/routing/url_for.rb:170:in `url_for'
+actionpack (7.0.1) lib/action_controller/metal/redirecting.rb:144:in `_compute_redirect_to_location'
+actionpack (7.0.1) lib/action_controller/metal/redirecting.rb:89:in `redirect_to'
+actionpack (7.0.1) lib/action_controller/metal/flash.rb:62:in `redirect_to'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:42:in `block in redirect_to'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:41:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:147:in `redirect_to'
+responders (3.0.1) lib/action_controller/responder.rb:207:in `navigation_behavior'
+responders (3.0.1) lib/action_controller/responder.rb:174:in `rescue in to_html'
+responders (3.0.1) lib/action_controller/responder.rb:171:in `to_html'
+responders (3.0.1) lib/action_controller/responder.rb:165:in `respond'
+responders (3.0.1) lib/action_controller/responder.rb:158:in `call'
+responders (3.0.1) lib/action_controller/respond_with.rb:213:in `respond_with'
+devise (4.8.1) app/controllers/devise/registrations_controller.rb:25:in `create'
+actionpack (7.0.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:214:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.1) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.1) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.1) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.1) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.1) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.1) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.1) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.1) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.1) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.1) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.1) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.1) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (7.0.1) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.1) lib/action_dispatch/routing/route_set.rb:850:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (7.0.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/cookies.rb:693:in `call'
+activerecord (7.0.1) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.1) lib/puma/configuration.rb:252:in `call'
+puma (5.6.1) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.1) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.1) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.1) lib/puma/server.rb:441:in `process_client'
+puma (5.6.1) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:24:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/users/sign_up" for ::1 at 2022-02-03 10:31:02 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 245)
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 653)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 84.1ms | Allocations: 6174)
+  Rendered navigation/_nav.html.erb (Duration: 0.8ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 160.9ms | Allocations: 40242)
+Completed 200 OK in 225ms (Views: 168.3ms | ActiveRecord: 5.4ms | Allocations: 51765)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 10:31:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/users" for ::1 at 2022-02-03 10:31:18 +0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"ann", "email"=>"ann@info.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ann@info.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["email", "ann@info.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-02-03 07:31:18.631410"], ["updated_at", "2022-02-03 07:31:18.631410"], ["username", "ann"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 386ms (ActiveRecord: 2.6ms | Allocations: 9068)
+
+
+Started GET "/" for ::1 at 2022-02-03 10:31:18 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 338)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 2831)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 3699)
+
+
