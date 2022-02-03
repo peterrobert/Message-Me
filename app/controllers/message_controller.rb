@@ -2,8 +2,8 @@ class MessageController < ApplicationController
     def create
         @message = current_user.messages.new(sanitize_message)
         if @message.save
-          flash[:success] = "message sent successfully"
-          redirect_to @message
+            ActionCable.server.broadcast "chatroom_channel",
+                                          foo: @message.message
         else
           flash[:notice] = "The text field cant be blank"
           redirect_to  root_path
