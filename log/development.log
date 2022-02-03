@@ -2721,3 +2721,1978 @@ Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:38:19 +0300
   
 ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
   
+Started GET "/" for ::1 at 2022-02-03 11:46:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ChatroomController#index as HTML
+Completed 401 Unauthorized in 60ms (ActiveRecord: 0.0ms | Allocations: 5645)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-03 11:46:30 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.9ms | Allocations: 822)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.9ms | Allocations: 3565)
+  Rendered navigation/_nav.html.erb (Duration: 1.4ms | Allocations: 453)
+  Rendered layout layouts/application.html.erb (Duration: 118.6ms | Allocations: 39791)
+Completed 200 OK in 200ms (Views: 142.0ms | ActiveRecord: 5.0ms | Allocations: 49093)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:46:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/users/sign_in" for ::1 at 2022-02-03 11:46:37 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ann@info.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "ann@info.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 394ms (ActiveRecord: 0.8ms | Allocations: 5222)
+
+
+Started GET "/" for ::1 at 2022-02-03 11:46:37 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 8674)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 10985)
+Completed 200 OK in 54ms (Views: 30.9ms | ActiveRecord: 5.3ms | Allocations: 14809)
+
+
+Started GET "/users/sign_out" for ::1 at 2022-02-03 11:46:40 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.4ms | Allocations: 2281)
+
+
+Started GET "/" for ::1 at 2022-02-03 11:46:40 +0300
+Processing by ChatroomController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 343)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-03 11:46:41 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 121)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 980)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3245)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3923)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-02-03 11:46:45 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 243)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 204)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2209)
+  Rendered navigation/_nav.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4469)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 5720)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-03 11:46:46 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 121)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 976)
+  Rendered navigation/_nav.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 3240)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3909)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-02-03 11:46:50 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ann@info.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "ann@info.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 345ms (ActiveRecord: 0.4ms | Allocations: 2309)
+
+
+Started GET "/" for ::1 at 2022-02-03 11:46:50 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1754)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 68)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3998)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 1.3ms | Allocations: 5523)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:47:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 11:55:35 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (1.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 5086)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5160)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 27.5ms | Allocations: 9630)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Message::ActiveRecord_Relation:0x00007f868b7a0dc8>
+Did you mean?  to_xml):
+    48:                         <div class="input-group-prepend">
+    49:                             <span class="input-group-text"><i class="fa fa-send"></i></span>
+    50:                         </div>
+    51:                         <%= form_with model: @messages do |form| %>
+    52:                              <%= form.text_field :message %>
+    53:                          <% end %>                               
+    54:                     </div>
+  
+app/views/chatroom/index.html.erb:51
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:55:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:56:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 11:56:13 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 26.0ms | Allocations: 6849)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 6923)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 14.0ms | Allocations: 15178)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Message::ActiveRecord_Relation:0x00007f868ac7d450>
+Did you mean?  to_xml):
+    48:                         <div class="input-group-prepend">
+    49:                             <span class="input-group-text"><i class="fa fa-send"></i></span>
+    50:                         </div>
+    51:                         <%= form_with model: @messages do |form| %>
+    52:                              <%= form.text_field :message %>
+    53:                          <% end %>                               
+    54:                     </div>
+  
+app/views/chatroom/index.html.erb:51
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:56:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:56:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 11:57:28 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 5545)
+  Rendered navigation/_nav.html.erb (Duration: 1.1ms | Allocations: 397)
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 20082)
+Completed 200 OK in 96ms (Views: 69.7ms | ActiveRecord: 9.2ms | Allocations: 28576)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:57:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:58:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 11:58:25 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2882)
+  Rendered navigation/_nav.html.erb (Duration: 1.0ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 5866)
+Completed 200 OK in 22ms (Views: 14.8ms | ActiveRecord: 1.8ms | Allocations: 8065)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:58:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 11:58:34 +0300
+Processing by ChatroomController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2487)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 4716)
+Completed 200 OK in 25ms (Views: 15.5ms | ActiveRecord: 5.2ms | Allocations: 6253)
+
+
+Started GET "/" for ::1 at 2022-02-03 11:58:59 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2884)
+  Rendered navigation/_nav.html.erb (Duration: 1.2ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 5853)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 1.7ms | Allocations: 8047)
+
+
+Started GET "/" for ::1 at 2022-02-03 11:59:03 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (4.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2486)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 4699)
+Completed 200 OK in 30ms (Views: 17.6ms | ActiveRecord: 7.8ms | Allocations: 6223)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:59:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 11:59:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:00:07 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2883)
+  Rendered navigation/_nav.html.erb (Duration: 1.0ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 8022)
+Completed 200 OK in 32ms (Views: 26.0ms | ActiveRecord: 1.7ms | Allocations: 10219)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:00:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:00:32 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (1.9ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2881)
+  Rendered navigation/_nav.html.erb (Duration: 2.8ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 5849)
+Completed 200 OK in 30ms (Views: 20.1ms | ActiveRecord: 5.4ms | Allocations: 8048)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:00:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/" for ::1 at 2022-02-03 12:00:40 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:00:41 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2484)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4711)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 1.4ms | Allocations: 6247)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:00:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:03:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/" for ::1 at 2022-02-03 12:03:51 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:03:51 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 5200)
+  Rendered navigation/_nav.html.erb (Duration: 0.6ms | Allocations: 59)
+  Rendered layout layouts/application.html.erb (Duration: 92.8ms | Allocations: 18985)
+Completed 200 OK in 129ms (Views: 89.8ms | ActiveRecord: 9.7ms | Allocations: 27202)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:03:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:04:22 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 5173)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 18958)
+Completed 200 OK in 65ms (Views: 36.1ms | ActiveRecord: 7.5ms | Allocations: 27153)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:04:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/" for ::1 at 2022-02-03 12:04:28 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:04:28 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2478)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4696)
+Completed 200 OK in 23ms (Views: 15.3ms | ActiveRecord: 2.8ms | Allocations: 6205)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:04:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:04:47 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5209)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 18978)
+Completed 200 OK in 56ms (Views: 31.0ms | ActiveRecord: 8.5ms | Allocations: 27178)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:04:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/" for ::1 at 2022-02-03 12:04:55 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:04:55 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2478)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4696)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 2.0ms | Allocations: 6222)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:04:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:05:46 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5186)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 18972)
+Completed 200 OK in 59ms (Views: 33.9ms | ActiveRecord: 8.2ms | Allocations: 27155)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:05:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/" for ::1 at 2022-02-03 12:05:51 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:05:51 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2478)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4696)
+Completed 200 OK in 23ms (Views: 10.4ms | ActiveRecord: 4.9ms | Allocations: 6199)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:05:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:06:45 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2988)
+  Rendered navigation/_nav.html.erb (Duration: 0.9ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 5970)
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 1.4ms | Allocations: 8163)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:06:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:09:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:15:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:20:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:38:35 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2608)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 6959)
+Completed 200 OK in 76ms (Views: 17.8ms | ActiveRecord: 38.2ms | Allocations: 10824)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:38:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:38:49 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1347)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1422)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms | Allocations: 3601)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="row clearfix">
+    <div class="col-lg-12">
+        <div class="card chat-app">
+            <div id="plist" class="people-list">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <ul class="list-unstyled chat-list mt-2 mb-0">
+                <% @users.each do |user| %>
+                     <li class="clearfix">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
+                        <div class="about">
+                            <div class="name"><%= user.username %></div>
+                            <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>                                            
+                        </div>
+                    </li>
+                <% end %>
+                </ul>
+            </div>
+            <div class="chat">
+                <div class="chat-header clearfix">
+                    <div class="row">
+                        <div class="col-lg-6 hidden-sm text-right">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-history">
+                    <ul class="m-b-0">
+                      <% @messages.each do |message| %>
+                      <li class="clearfix">
+                            <div class="message-data">
+                                <span class="message-data-time text-capitalize badge badge-warning"><%= message.user.username %></span>
+                            </div>
+                            <div class="message my-message"> <%= message.message %> </div>                                    
+                        </li>       
+                      <% end %>
+                    </ul>
+                </div>
+                <div class="chat-message clearfix">
+                    <div class="input-group mb-0">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-send"></i></span>
+                        </div>
+                        <%= form_with model: @message, class: "form-control send-message" do |form| %>
+                             <%= form.text_field :message class: "input-message" %>
+                              <%= form.submit %>
+                         <% end %>                                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+):
+1:    <div class="row clearfix">
+2:        <div class="col-lg-12">
+3:            <div class="card chat-app">
+4:                <div id="plist" class="people-list">
+5:                    <div class="input-group">
+6:                        <div class="input-group-prepend">
+7:                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+8:                        </div>
+9:                        <input type="text" class="form-control" placeholder="Search...">
+10:                    </div>
+11:                    <ul class="list-unstyled chat-list mt-2 mb-0">
+12:                    <% @users.each do |user| %>
+13:                         <li class="clearfix">
+14:                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
+15:                            <div class="about">
+16:                                <div class="name"><%= user.username %></div>
+17:                                <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>                                            
+18:                            </div>
+19:                        </li>
+20:                    <% end %>
+21:                    </ul>
+22:                </div>
+23:                <div class="chat">
+24:                    <div class="chat-header clearfix">
+25:                        <div class="row">
+26:                            <div class="col-lg-6 hidden-sm text-right">
+27:                                <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+28:                                <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+29:                                <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+30:                                <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+31:                            </div>
+32:                        </div>
+33:                    </div>
+34:                    <div class="chat-history">
+35:                        <ul class="m-b-0">
+36:                          <% @messages.each do |message| %>
+37:                          <li class="clearfix">
+38:                                <div class="message-data">
+39:                                    <span class="message-data-time text-capitalize badge badge-warning"><%= message.user.username %></span>
+40:                                </div>
+41:                                <div class="message my-message"> <%= message.message %> </div>                                    
+42:                            </li>       
+43:                          <% end %>
+44:                        </ul>
+45:                    </div>
+46:                    <div class="chat-message clearfix">
+47:                        <div class="input-group mb-0">
+48:                            <div class="input-group-prepend">
+49:                                <span class="input-group-text"><i class="fa fa-send"></i></span>
+50:                            </div>
+51:                            <%= form_with model: @message, class: "form-control send-message" do |form| %>
+52:                                 <%= form.text_field :message class: "input-message" %>
+53:                                  <%= form.submit %>
+54:                             <% end %>                                  
+55:                        </div>
+56:                    </div>
+57:                </div>
+58:            </div>
+59:        </div>
+60:    </div>
+  
+app/views/chatroom/index.html.erb:52: syntax error, unexpected `class', expecting ')'
+app/views/chatroom/index.html.erb:52: syntax error, unexpected `class', expecting ')'
+app/views/chatroom/index.html.erb:52: syntax error, unexpected `class', expecting ')'
+app/views/chatroom/index.html.erb:52: syntax error, unexpected `class', expecting ')'
+app/views/chatroom/index.html.erb:52: syntax error, unexpected `class', expecting ')'
+app/views/chatroom/index.html.erb:52: syntax error, unexpected `class', expecting ')'
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:38:53 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:39:02 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2982)
+  Rendered navigation/_nav.html.erb (Duration: 1.0ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 6486)
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 1.4ms | Allocations: 8689)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:39:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:39:44 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1351)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1426)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms | Allocations: 3575)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="row clearfix">
+    <div class="col-lg-12">
+        <div class="card chat-app">
+            <div id="plist" class="people-list">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+                <ul class="list-unstyled chat-list mt-2 mb-0">
+                <% @users.each do |user| %>
+                     <li class="clearfix">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
+                        <div class="about">
+                            <div class="name"><%= user.username %></div>
+                            <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>                                            
+                        </div>
+                    </li>
+                <% end %>
+                </ul>
+            </div>
+            <div class="chat">
+                <div class="chat-header clearfix">
+                    <div class="row">
+                        <div class="col-lg-6 hidden-sm text-right">
+                            <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-history">
+                    <ul class="m-b-0">
+                      <% @messages.each do |message| %>
+                      <li class="clearfix">
+                            <div class="message-data">
+                                <span class="message-data-time text-capitalize badge badge-warning"><%= message.user.username %></span>
+                            </div>
+                            <div class="message my-message"> <%= message.message %> </div>                                    
+                        </li>       
+                      <% end %>
+                    </ul>
+                </div>
+                <div class="chat-message clearfix">
+                    <div class="input-group mb-0">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-send"></i></span>
+                        </div>
+                        <%= form_with model: @message, class: "form-control send-message" do |form| %>
+                             <%= form.text_field :message, class: "input-message" %>
+                              <%= form.submit , class: "btn btn-primary" %>
+                         <% end %>                                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+):
+1:    <div class="row clearfix">
+2:        <div class="col-lg-12">
+3:            <div class="card chat-app">
+4:                <div id="plist" class="people-list">
+5:                    <div class="input-group">
+6:                        <div class="input-group-prepend">
+7:                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+8:                        </div>
+9:                        <input type="text" class="form-control" placeholder="Search...">
+10:                    </div>
+11:                    <ul class="list-unstyled chat-list mt-2 mb-0">
+12:                    <% @users.each do |user| %>
+13:                         <li class="clearfix">
+14:                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="avatar">
+15:                            <div class="about">
+16:                                <div class="name"><%= user.username %></div>
+17:                                <div class="status"> <i class="fa fa-circle offline"></i> left 7 mins ago </div>                                            
+18:                            </div>
+19:                        </li>
+20:                    <% end %>
+21:                    </ul>
+22:                </div>
+23:                <div class="chat">
+24:                    <div class="chat-header clearfix">
+25:                        <div class="row">
+26:                            <div class="col-lg-6 hidden-sm text-right">
+27:                                <a href="javascript:void(0);" class="btn btn-outline-secondary"><i class="fa fa-camera"></i></a>
+28:                                <a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-image"></i></a>
+29:                                <a href="javascript:void(0);" class="btn btn-outline-info"><i class="fa fa-cogs"></i></a>
+30:                                <a href="javascript:void(0);" class="btn btn-outline-warning"><i class="fa fa-question"></i></a>
+31:                            </div>
+32:                        </div>
+33:                    </div>
+34:                    <div class="chat-history">
+35:                        <ul class="m-b-0">
+36:                          <% @messages.each do |message| %>
+37:                          <li class="clearfix">
+38:                                <div class="message-data">
+39:                                    <span class="message-data-time text-capitalize badge badge-warning"><%= message.user.username %></span>
+40:                                </div>
+41:                                <div class="message my-message"> <%= message.message %> </div>                                    
+42:                            </li>       
+43:                          <% end %>
+44:                        </ul>
+45:                    </div>
+46:                    <div class="chat-message clearfix">
+47:                        <div class="input-group mb-0">
+48:                            <div class="input-group-prepend">
+49:                                <span class="input-group-text"><i class="fa fa-send"></i></span>
+50:                            </div>
+51:                            <%= form_with model: @message, class: "form-control send-message" do |form| %>
+52:                                 <%= form.text_field :message, class: "input-message" %>
+53:                                  <%= form.submit , class: "btn btn-primary" %>
+54:                             <% end %>                                  
+55:                        </div>
+56:                    </div>
+57:                </div>
+58:            </div>
+59:        </div>
+60:    </div>
+  
+app/views/chatroom/index.html.erb:53: syntax error, unexpected tLABEL, expecting '='
+app/views/chatroom/index.html.erb:53: syntax error, unexpected tLABEL, expecting '='
+app/views/chatroom/index.html.erb:53: syntax error, unexpected tLABEL, expecting '='
+app/views/chatroom/index.html.erb:53: syntax error, unexpected tLABEL, expecting '='
+app/views/chatroom/index.html.erb:53: syntax error, unexpected tLABEL, expecting '='
+app/views/chatroom/index.html.erb:53: syntax error, unexpected tLABEL, expecting '='
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:39:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:39:58 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2992)
+  Rendered navigation/_nav.html.erb (Duration: 0.9ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5974)
+Completed 200 OK in 26ms (Views: 15.9ms | ActiveRecord: 1.3ms | Allocations: 8148)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:40:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:40:20 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:40:35 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2571)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4798)
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 1.5ms | Allocations: 6313)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:40:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:41:21 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 2936)
+  Rendered navigation/_nav.html.erb (Duration: 1.9ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 5914)
+Completed 200 OK in 39ms (Views: 29.5ms | ActiveRecord: 1.4ms | Allocations: 8101)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:41:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:41:33 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2937)
+  Rendered navigation/_nav.html.erb (Duration: 1.0ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 5919)
+Completed 200 OK in 23ms (Views: 16.2ms | ActiveRecord: 1.5ms | Allocations: 8097)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:41:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:42:14 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2936)
+  Rendered navigation/_nav.html.erb (Duration: 0.8ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 5905)
+Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 1.1ms | Allocations: 8098)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:42:17 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:42:26 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 2936)
+  Rendered navigation/_nav.html.erb (Duration: 0.9ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 5914)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 1.6ms | Allocations: 8111)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:42:29 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/" for ::1 at 2022-02-03 12:42:33 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:42:33 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2516)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4743)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 2.1ms | Allocations: 6251)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:42:36 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:42:55 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 5254)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 59)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 19039)
+Completed 200 OK in 77ms (Views: 48.4ms | ActiveRecord: 11.0ms | Allocations: 27337)
+
+
+Started POST "/" for ::1 at 2022-02-03 12:42:58 +0300
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:42:58 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:42:58 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2510)
+  Rendered navigation/_nav.html.erb (Duration: 0.1ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4728)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 1.2ms | Allocations: 6245)
+
+
+Started POST "/" for ::1 at 2022-02-03 12:43:00 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:43:00 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2510)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 52)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4728)
+Completed 200 OK in 17ms (Views: 10.3ms | ActiveRecord: 2.1ms | Allocations: 6251)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:43:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:43:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/" for ::1 at 2022-02-03 12:43:20 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:43:20 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 21.4ms | Allocations: 5277)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 59)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 19063)
+Completed 200 OK in 72ms (Views: 41.5ms | ActiveRecord: 11.2ms | Allocations: 27258)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:43:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:43:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:46:08 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 5061)
+  Rendered navigation/_nav.html.erb (Duration: 1.7ms | Allocations: 406)
+  Rendered layout layouts/application.html.erb (Duration: 79.1ms | Allocations: 19607)
+Completed 200 OK in 104ms (Views: 77.8ms | ActiveRecord: 8.1ms | Allocations: 28103)
+
+
+Started POST "/message" for ::1 at 2022-02-03 12:46:10 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/message"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:46:10 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2455)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4690)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 1.2ms | Allocations: 6217)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:46:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 12:46:12 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/message"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:46:12 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2453)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4672)
+Completed 200 OK in 18ms (Views: 10.7ms | ActiveRecord: 1.9ms | Allocations: 6187)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:46:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:46:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:46:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:51:52 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3587)
+  Rendered navigation/_nav.html.erb (Duration: 1.4ms | Allocations: 406)
+  Rendered layout layouts/application.html.erb (Duration: 50.6ms | Allocations: 18132)
+Completed 200 OK in 83ms (Views: 52.0ms | ActiveRecord: 9.0ms | Allocations: 27726)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:51:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 12:51:56 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/message"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:51:56 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1928)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4164)
+Completed 200 OK in 18ms (Views: 11.1ms | ActiveRecord: 2.4ms | Allocations: 5690)
+
+
+Started POST "/message" for ::1 at 2022-02-03 12:51:58 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/message"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:51:58 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1926)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 4153)
+Completed 200 OK in 22ms (Views: 15.0ms | ActiveRecord: 1.3ms | Allocations: 5684)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:51:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:52:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:52:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 12:56:53 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/message"):
+  
+Started GET "/" for ::1 at 2022-02-03 12:56:54 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 3194)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 71)
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 16991)
+Completed 200 OK in 108ms (Views: 64.5ms | ActiveRecord: 11.3ms | Allocations: 26287)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:56:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 12:57:26 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 12:57:27 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>"test"}, "commit"=>"send"}
+No template found for MessageController#create, rendering head :no_content
+Completed 204 No Content in 799425ms (Allocations: 117167)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:10:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 13:11:46 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>"test"}, "commit"=>"send"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mMessage Create (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("message", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["message", "test"], ["created_at", "2022-02-03 10:11:46.733201"], ["updated_at", "2022-02-03 10:11:46.733201"], ["user_id", 3]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (28.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/message.2
+Completed 302 Found in 141ms (ActiveRecord: 70.9ms | Allocations: 17242)
+
+
+Started GET "/message.2" for ::1 at 2022-02-03 13:11:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/message.2"):
+  
+Started GET "/" for ::1 at 2022-02-03 13:11:46 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (4.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 28.9ms | Allocations: 2634)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 16429)
+Completed 200 OK in 65ms (Views: 46.6ms | ActiveRecord: 11.2ms | Allocations: 18420)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:11:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:12:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 13:12:47 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>"Another test "}, "commit"=>"send"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mMessage Create (0.4ms)[0m  [1m[32mINSERT INTO "messages" ("message", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["message", "Another test "], ["created_at", "2022-02-03 10:12:47.603162"], ["updated_at", "2022-02-03 10:12:47.603162"], ["user_id", 3]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/message.3
+Completed 302 Found in 15ms (ActiveRecord: 1.9ms | Allocations: 3879)
+
+
+Started GET "/message.3" for ::1 at 2022-02-03 13:12:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/message.3"):
+  
+Started GET "/" for ::1 at 2022-02-03 13:12:47 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 3186)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 5413)
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 2.8ms | Allocations: 6942)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:12:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:13:20 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 13:52:26 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 11.7ms | Allocations: 8315)
+
+
+  
+ActionView::MissingTemplate (Missing template message/new, application/new with {:locale=>[:en], :formats=>[:turbo_stream, :html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/macuser/Desktop/applications/Message-Me/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actiontext-7.0.1/app/views"
+  * "/Users/macuser/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/actionmailbox-7.0.1/app/views"
+
+Did you mean?  devise/passwords/new
+               devise/registrations/new
+               devise/confirmations/new
+               rails/conductor/action_mailbox/inbound_emails/new
+               rails/conductor/action_mailbox/inbound_emails/sources/new
+               devise/unlocks/new):
+  
+app/controllers/message_controller.rb:9:in `create'
+Started GET "/users/sign_in" for ::1 at 2022-02-03 13:52:32 +0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms | Allocations: 1609)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:52:32 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 3227)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5457)
+Completed 200 OK in 25ms (Views: 19.2ms | ActiveRecord: 1.9ms | Allocations: 6998)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-02-03 13:52:32 +0300
+Started GET "/" for ::1 at 2022-02-03 13:52:32 +0300
+Processing by ChatroomController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 16.9ms | Allocations: 3307)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 68)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 5586)
+Completed 200 OK in 29ms (Views: 17.9ms | ActiveRecord: 6.4ms | Allocations: 7137)
+
+
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms | Allocations: 1434)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:52:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:52:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:53:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 13:53:08 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+No template found for MessageController#create, rendering head :no_content
+Completed 204 No Content in 42ms (ActiveRecord: 14.7ms | Allocations: 12645)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:53:10 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+No template found for MessageController#create, rendering head :no_content
+Completed 204 No Content in 18ms (ActiveRecord: 8.7ms | Allocations: 3708)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:53:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 13:54:50 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 9.0ms | Allocations: 12453)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:54:50 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (1.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 3198)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 17043)
+Completed 200 OK in 39ms (Views: 32.3ms | ActiveRecord: 2.6ms | Allocations: 19025)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:54:53 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms | Allocations: 3674)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:54:53 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5401)
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 1.7ms | Allocations: 6945)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:54:54 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.6ms | Allocations: 3683)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:54:54 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 5401)
+Completed 200 OK in 21ms (Views: 15.0ms | ActiveRecord: 1.8ms | Allocations: 6961)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:54:55 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms | Allocations: 3683)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:54:55 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5401)
+Completed 200 OK in 19ms (Views: 13.4ms | ActiveRecord: 1.6ms | Allocations: 6941)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:54:55 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.4ms | Allocations: 3677)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:54:55 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 5401)
+Completed 200 OK in 19ms (Views: 13.7ms | ActiveRecord: 1.5ms | Allocations: 6961)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:54:55 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms | Allocations: 3681)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:54:55 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 5401)
+Completed 200 OK in 19ms (Views: 13.7ms | ActiveRecord: 2.0ms | Allocations: 6955)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:54:56 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.2ms | Allocations: 3675)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:54:56 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 5401)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 1.7ms | Allocations: 6937)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:55:12 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 35ms (ActiveRecord: 8.1ms | Allocations: 12456)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:55:12 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3198)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 16897)
+Completed 200 OK in 39ms (Views: 32.1ms | ActiveRecord: 2.6ms | Allocations: 18884)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:55:13 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms | Allocations: 3679)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:55:13 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 5412)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 1.9ms | Allocations: 6965)
+
+
+Started POST "/message" for ::1 at 2022-02-03 13:55:15 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 4.1ms | Allocations: 3681)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:55:15 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 3185)
+  Rendered navigation/_nav.html.erb (Duration: 0.3ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 5402)
+Completed 200 OK in 42ms (Views: 34.1ms | ActiveRecord: 2.0ms | Allocations: 6954)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:55:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  
+Started POST "/message" for ::1 at 2022-02-03 13:55:50 +0300
+Processing by MessageController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "message"=>{"message"=>""}, "commit"=>"send"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/message_controller.rb:4:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/message_controller.rb:4:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 57ms (ActiveRecord: 11.3ms | Allocations: 12488)
+
+
+Started GET "/" for ::1 at 2022-02-03 13:55:50 +0300
+Processing by ChatroomController#index as TURBO_STREAM
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering chatroom/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/chatroom/index.html.erb:12
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/views/chatroom/index.html.erb:36
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/chatroom/index.html.erb:39
+  Rendered chatroom/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 3198)
+  Rendered navigation/_nav.html.erb (Duration: 0.2ms | Allocations: 69)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 16996)
+Completed 200 OK in 44ms (Views: 38.0ms | ActiveRecord: 1.7ms | Allocations: 18982)
+
+
+Started GET "/serviceworker.js" for ::1 at 2022-02-03 13:56:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/serviceworker.js"):
+  

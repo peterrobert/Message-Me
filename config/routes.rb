@@ -7,5 +7,8 @@ Rails.application.routes.draw do
      get '/users/sign_out' => 'devise/sessions#destroy'     
   end
   # Defines the root path route ("/")
+  post '/message', to: 'message#create'
   root "chatroom#index"
+
+  mount ApplicationCable.server, at: '/cable'
 end

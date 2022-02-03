@@ -48,7 +48,10 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fa fa-send"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Enter text here...">                                    
+                        <%= form_with model: @message, url: '/message', class: "form-control send-message" do |form| %>
+                             <%= form.text_field :message, class: "input-message" %>
+                              <%= form.submit "send",  class: "btn btn-secondary" %>
+                         <% end %>                                  
                     </div>
                 </div>
             </div>

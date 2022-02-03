@@ -262,6 +262,16 @@
     }
 }
 
+.send-message{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.send-message .input-message{
+    width: 100% !important;
+    flex: 1
+}
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .chat-app .chat-list {
         height: 650px;
